@@ -1,0 +1,24 @@
+get_list:
+  path: /drinks
+  controller: App\Controller\DrinkController::getList
+  methods: [GET]
+
+get_one:
+  path: /drinks/{id}
+  controller: App\Controller\DrinkController::getOne
+  methods: [GET]
+
+post:
+  path: /drinks/{id}
+  controller: App\Controller\DrinkController::create
+  methods: [POST]
+
+update:
+  path: /drinks/{id}
+  controller: App\Controller\DrinkController::update
+  methods: [PATCH]
+
+delete:
+  path: /drinks/{id}
+  controller: App\Controller\DrinkController::remove
+  methods: [DELETE]
